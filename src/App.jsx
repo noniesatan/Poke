@@ -6,6 +6,7 @@ import axios from 'axios'
 import ReactLoading from 'react-loading';
 //Componenst 
 import FavPoke from './components/favpoke'
+import { FaHeart } from "react-icons/fa";
 
 function App() {
   const [poke,setPoke] = useState("");
@@ -81,7 +82,7 @@ const Addfav = () => {
             
               <img src={poke?.sprites?.other?.home?.front_default} alt={poke?.name} />
               
-              <button className="h-8 px-4 m-2 text-sm" onClick={prevPoke} style={{margin: "0.5rem"}}>Previous</button>
+              <button className="h-8 px-4 m-2 text-sm" onClick={pevPoke} style={{margin: "0.5rem"}}>Previous</button>
               <button className="h-8 px-4 m-2 text-sm" onClick={Addfav} style={{margin: "0.5rem"}}><FaHeart /></button>
               <button className="h-8 px-4 m-2 text-sm"onClick={nextPoke}style={{margin: "0.5rem"}}>Next</button>
           </>
